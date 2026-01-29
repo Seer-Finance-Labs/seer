@@ -11,6 +11,8 @@
   justify-content: space-between
   padding: 18px 60px
   border-bottom: 1px solid #292929
+  @media (max-width: 440px)
+    padding: 18px 24px
 
   //.header__links
   &__links
@@ -52,6 +54,9 @@
     text-align: center
     font-weight: 700
 
+    @media (max-width: 767px)
+      font-size: 56px
+
     @media (max-width: 440px)
       font-size: 42px
 
@@ -61,6 +66,9 @@
     text-align: center
     line-height: 130%
     opacity: 0.8
+
+    @media (max-width: 767px)
+      font-size: 20px
 
     @media (max-width: 440px)
       font-size: 16px
@@ -90,11 +98,52 @@
     @media (max-width: 991px)
       top: -220px
 
+    @media (max-width: 440px)
+      width: 808px
+      top: -90px
+
   // .background__code1
   &__code1
+    position: absolute
+    bottom: -185px
+    left: 50%
+    transform: translateX(calc(-50% - 520px))
+    top: 585px
+    transition: all 0.5s ease
+
+    @media (max-width: 991px)
+      transform: translateX(calc(-50% - 250px))
+
+    @media (max-width: 441px)
+      transform: translateX(calc(-50% - 215px))
+      top: 535px
 
   // .background__code2
   &__code2
+    position: absolute
+    top: 72px
+    left: 50%
+    transform: translateX(calc(-50% + 570px))
+    transition: all 0.5s ease
+
+    @media (max-width: 991px)
+      transform: translateX(calc(-50% + 360px))
+
+    @media (max-width: 441px)
+      transform: translateX(calc(-50% + 150px))
+      top: 55px
 
   // .background__code3
   &__code3
+    position: absolute
+    top: 585px
+    left: 50%
+    transform: translateX(calc(-50% + 630px))
+    transition: all 0.5s ease
+
+    @media (max-width: 991px)
+      transform: translateX(calc(-50% + 350px))
+
+    @media (max-width: 441px)
+      transform: translateX(calc(-50% + 265px))
+      top: 540px
