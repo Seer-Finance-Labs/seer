@@ -140,6 +140,10 @@ body {
   padding: 32px 0;
 }
 
+.footer p {
+  padding-top: 2px;
+}
+
 .background__core {
   position: absolute;
   z-index: 0;
