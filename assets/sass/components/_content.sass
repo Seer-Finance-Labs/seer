@@ -1,0 +1,152 @@
+.content
+  display: flex
+  flex-direction: column
+  position: relative
+  z-index: 1
+  min-height: 100vh
+
+.header
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding: 18px 60px
+  border-bottom: 1px solid #292929
+  @media (max-width: 440px)
+    padding: 18px 24px
+
+  //.header__links
+  &__links
+    display: flex
+    gap: 12px
+
+    //.header__links-item
+    &-item
+      display: flex
+      width: 36px
+      height: 36px
+      border-radius: 100%
+      align-items: center
+      justify-content: center
+      background-color: #2A2A2A
+      transition: background-color 0.3s ease
+
+      &:hover
+        background-color: #3E3E3E
+
+
+.info
+  display: flex
+  flex-direction: column
+  gap: 24px
+  margin: 180px auto 0 auto
+  width: 100%
+  max-width: 900px
+
+  @media (max-width: 991px)
+    max-width: calc(100vw - 100px)
+
+  @media (max-width: 440px)
+    max-width: calc(100vw - 48px)
+
+  // .info__title
+  &__title
+    font-size: 72px
+    text-align: center
+    font-weight: 700
+
+    @media (max-width: 767px)
+      font-size: 56px
+
+    @media (max-width: 440px)
+      font-size: 42px
+
+  // .info__description
+  &__description
+    font-size: 24px
+    text-align: center
+    line-height: 130%
+    opacity: 0.8
+
+    @media (max-width: 767px)
+      font-size: 20px
+
+    @media (max-width: 440px)
+      font-size: 16px
+
+.footer
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: 8px
+  width: 100%
+  font-size: 16px
+  font-weight: 500
+  opacity: 0.6
+  margin-top: auto
+  padding: 32px 0
+
+  // .footer p
+  p
+    padding-top: 2px
+
+.background
+  // .background__core
+  &__core
+    position: absolute
+    z-index: 0
+    top: -102px
+    left: 50%
+    transform: translateX(-50%)
+    transition: all 0.5s ease
+
+    @media (max-width: 991px)
+      top: -220px
+
+    @media (max-width: 440px)
+      width: 808px
+      top: -90px
+
+  // .background__code1
+  &__code1
+    position: absolute
+    bottom: -185px
+    left: 50%
+    transform: translateX(calc(-50% - 520px))
+    top: 585px
+    transition: all 0.5s ease
+
+    @media (max-width: 991px)
+      transform: translateX(calc(-50% - 250px))
+
+    @media (max-width: 441px)
+      transform: translateX(calc(-50% - 215px))
+      top: 535px
+
+  // .background__code2
+  &__code2
+    position: absolute
+    top: 72px
+    left: 50%
+    transform: translateX(calc(-50% + 570px))
+    transition: all 0.5s ease
+
+    @media (max-width: 991px)
+      transform: translateX(calc(-50% + 360px))
+
+    @media (max-width: 441px)
+      transform: translateX(calc(-50% + 150px))
+
+  // .background__code3
+  &__code3
+    position: absolute
+    top: 585px
+    left: 50%
+    transform: translateX(calc(-50% + 630px))
+    transition: all 0.5s ease
+
+    @media (max-width: 991px)
+      transform: translateX(calc(-50% + 350px))
+
+    @media (max-width: 441px)
+      transform: translateX(calc(-50% + 265px))
+      top: 540px
